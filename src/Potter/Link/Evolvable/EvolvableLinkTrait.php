@@ -10,7 +10,7 @@ trait EvolvableLinkTrait
 {
     final public function withHref(Stringable|string $href): static
     {
-        $this->with('href', (string) $href);
+        return $this->with('href', (string) $href);
     }
     
     final public function withRel(string $rel): static
