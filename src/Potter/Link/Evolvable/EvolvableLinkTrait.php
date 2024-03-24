@@ -8,9 +8,9 @@ use \Potter\Cloneable\CloneableInterface;
 
 trait EvolvableLinkTrait 
 {
-    final public function withHref(string $href): static
+    final public function withHref(Stringable|string $href): static
     {
-        $this->with('href', $href);
+        $this->with('href', (string) $href);
     }
     
     final public function withRel(string $rel): static
