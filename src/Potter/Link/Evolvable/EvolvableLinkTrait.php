@@ -37,7 +37,7 @@ trait EvolvableLinkTrait
         return $clone;
     }
     
-    final public function withAttribute(string $attribute, string $value): static
+    final public function withAttribute(string $attribute, mixed $value): static
     {
         $attributes = $this->getAttributes();
         $clone = $this->getClone();
