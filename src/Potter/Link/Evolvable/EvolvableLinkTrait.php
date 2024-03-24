@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Potter\Link\Evolvable;
 
-use \Potter\Cloneable\CloneableInterface;
+use \Potter\Cloneable\CloneableInterface, \Stringable;
 
 trait EvolvableLinkTrait 
 {
