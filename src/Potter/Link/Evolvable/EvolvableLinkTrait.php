@@ -55,9 +55,9 @@ trait EvolvableLinkTrait
         return $clone;
     }
     
-    abstract public function getClone(): CloneableInterface;
-    abstract protected function with(string $id, mixed $entry): CloneableInterface;
-    abstract protected function without(string $id): CloneableInterface;
+    abstract public function getClone(): static;
+    abstract protected function with(string $id, mixed $entry): static;
+    abstract protected function without(string $id): static;
     
     abstract public function getRels(): array;
     abstract public function hasRel(string $rel): bool;
